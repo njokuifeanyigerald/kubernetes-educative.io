@@ -1,0 +1,39 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: default
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: devops-toolkit
+            port:
+              number: 80
+
+
+# ingress with rules
+
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: default
+#   annotations:
+#     kubernetes.io/ingress.class: "nginx"
+#     ingress.kubernetes.io/ssl-redirect: "false"
+#     nginx.ingress.kubernetes.io/ssl-redirect: "false"
+# spec:
+#   backend:
+#     serviceName: devops-toolkit
+#     servicePort: 80
+
+    # When an Ingress spec is without rules, it is considered a default backend. 
+    # As such, it will forward all requests that do not match paths and/or 
+    # domains set as rules in the other Ingress resources.
