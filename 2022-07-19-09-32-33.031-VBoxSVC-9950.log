@@ -1,0 +1,7 @@
+Log created: 2022-07-19T09:32:33.315752000Z
+Process ID:  9950 (0x26de)
+Parent PID:  2126 (0x84e)
+Executable:  /usr/lib/virtualbox/VBoxSVC
+Arg[0]: /usr/lib/virtualbox/VBoxSVC
+Arg[1]: --auto-shutdown
+AddRef: illegal refcnt=3221225469 state=2

@@ -1,0 +1,12 @@
+Log created: 2022-07-17T09:36:48.926805000Z
+Process ID:  13020 (0x32dc)
+Parent PID:  2132 (0x854)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: minikube
+Arg[3]: --startvm
+Arg[4]: 75f0eb21-4f50-4100-8cf0-96777a124485
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
